@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+body {
+    margin: 0;
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.inner-card {
+    background-color: hsl(235, 46%, 20%);
+}
+
+.activity-deets {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: hsl(235, 46%, 20%); 
+    transition: .5s;
+}
+
+.activity-inner {
+    margin-bottom: 20px;
+}
+
+.time {
+    margin-bottom: 10px;
+}
+
+.activity-deets:hover {
+    background-color: hsl(235, 45%, 61%);
+}
+
+.ellipsis-btn { 
+    background-color: white;
+    -webkit-mask: url('images/icon-ellipsis.svg') no-repeat center;
+    mask: url('images/icon-ellipsis.svg') no-repeat center;
+}
+
+.user-details {
+    padding: 2rem;
+}
+
+.pfp {
+    width: 5rem;
+    border: white 3px solid;
+}
+
+.deets {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.deets h1 {
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+.user-details {
+    background-color: hsl(246, 80%, 60%);
+}
+
+/* Activity Cards */
+
+.work-card {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url('images/icon-work.svg');
+}
+
+.play-card {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url('images/icon-play.svg');
+}
+
+.study-card {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url('images/icon-study.svg');
+}
+
+.exercise-card {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url('images/icon-exercise.svg');
+}
+
+.social-card {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url('images/icon-social.svg');
+}
+
+.self-care-card {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url('images/icon-self-care.svg');
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
