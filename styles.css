@@ -12,7 +12,7 @@ body {
 }
 
 .activity-deets {
-    margin-top: 3rem;
+    margin-top: 4rem;
     padding: 1.5rem;
     background-color: hsl(235, 46%, 20%); 
     transition: .5s;
