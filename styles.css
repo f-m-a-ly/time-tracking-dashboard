@@ -12,6 +12,7 @@ body {
 }
 
 .activity-deets {
+    font-weight: 300;
     margin-top: 4rem;
     padding: 1.5rem;
     background-color: hsl(235, 46%, 20%); 
@@ -22,18 +23,22 @@ body {
     margin-bottom: 20px;
 }
 
-.time {
+.activity-title {
+    font-weight: 500;
+}
+
+.activity-time {
     margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.previous-time {
+    font-weight: 400;
+    color: hsl(236, 100%, 87%);
 }
 
 .activity-deets:hover {
     background-color: hsl(235, 45%, 61%);
-}
-
-.ellipsis-btn { 
-    background-color: white;
-    -webkit-mask: url('images/icon-ellipsis.svg') no-repeat center;
-    mask: url('images/icon-ellipsis.svg') no-repeat center;
 }
 
 .user-details {
