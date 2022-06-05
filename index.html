@@ -20,39 +20,51 @@
       <div class="grid grid-cols-4 grid-rows-3 gap-4 ">
 
         <!-- USER CARD -->
-        <div class="rounded-md rounded-md inner-card row-span-2 lg:col-span-1 col-span-4">
-          <div class="rounded-md user-details">
-            <img class="pfp rounded-full" src="images/image-jeremy.png" alt="">
-            <div class="deets">
-              <h6 class="text-sm"> Report for</h6>
-              <h1 class="text-5xl">Jeremy Robson</h1>
+        <div class="rounded-lg inner-card lg:row-span-2 lg:col-span-1 col-span-4">
+          <div class="rounded-lg user-details p-8 grid grid-cols-3">
+            <div class="col-span-1 lg:col-span-3 lg:mb-8">
+              <img class="pfp rounded-full" src="images/image-jeremy.png" alt="">
+            </div>
+            <div class="col-span-2 lg:col-span-3">
+              <h6 class="text-lg lg:m-0 mt-2"> Report for</h6>
+              <h1 class="text-2xl lg:text-5xl lg:mb-10 mt-0">Jeremy Robson</h1>
             </div>
           </div>
   
-          <div class="buttons">
-            <a id="dailyBtn">Daily</a>
-            <a id="weeklyBtn">Weekly</ai=>
-            <a id="monthlyBtn">Monthly</a>
+          <div class="buttons grid grid-cols-3 p-8 lg:text-left text-center">
+            <div class="col-span-1 lg:col-span-3 lg:pb-4">
+              <a id="dailyBtn">Daily</a>
+            </div>
+            <div class="col-span-1 lg:col-span-3 lg:pb-4">
+              <a id="weeklyBtn">Weekly</a>
+            </div>
+            <div class="col-span-1 lg:col-span-3">
+              <a id="monthlyBtn">Monthly</a>
+            </div>
           </div>
     
         </div>
     
         <!-- WORK-->
-        <div class="flex items-end rounded-md inner-card work-card bg-no-repeat bg-right-top  lg:col-span-1 col-span-4">
-          <div class="rounded-md activity-deets min-w-full">
-            <div class="activity-inner flex items-center place-content-between">
-              <div>
-                <h5 class="activity-title text-lg" >Work</h5>
+        <div class="flex items-end rounded-lg inner-card work-card bg-no-repeat bg-right-top lg:col-span-1 col-span-4">
+          <div class="rounded-lg activity-deets min-w-full grid grid-col-2">
+            <div class="col-span-2">
+              <div class="activity-inner flex items-center place-content-between">
+                <div>
+                  <h5 class="activity-title text-lg" >Work</h5>
+                </div>
+                <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
               </div>
-              <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
+            </div>
+            
+            <div class="col-span-1  lg:col-span-2">
+              <h1 class="activity-time text-6xl">5hrs</h1> <!-- daily -->
             </div>
   
-            <h1 class="activity-time text-6xl">5hrs</h1> <!-- daily -->
-  
-            <p class="previous-time text-lg">Previous - 7hrs</p> <!-- daily -->
-          
-           
-           
+            <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
+              <p class="previous-time text-lg">Previous - 7hrs</p> <!-- daily -->
+            </div>
+             
               <!-- Weekly
               32hrs
               Previous - 36hrs
@@ -64,19 +76,25 @@
         </div>
     
         <!-- PLAY -->
-        <div class="flex items-end rounded-md inner-card play-card bg-no-repeat bg-right-top  lg:col-span-1 col-span-4">
-          <div class="rounded-md activity-deets min-w-full">
-            <div class="activity-inner flex items-center place-content-between">
-              <div>
-                <h5 class="activity-title text-lg" >Play</h5>
+        <div class="flex items-end rounded-lg inner-card play-card bg-no-repeat bg-right-top  lg:col-span-1 col-span-4">
+          <div class="rounded-lg activity-deets min-w-full grid grid-col-2">
+            <div class="col-span-2">
+              <div class="activity-inner flex items-center place-content-between">
+                <div>
+                  <h5 class="activity-title text-lg" >Play</h5>
+                </div>
+                <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
               </div>
-              <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
             </div>
-
-            <h1 class="activity-time text-6xl">1hr</h1> <!-- daily -->
-
-            <p class="previous-time text-lg">Previous - 2hrs </p> <!-- daily -->
             
+            <div class="col-span-1  lg:col-span-2">
+              <h1 class="activity-time text-6xl">1hr</h1> <!-- daily -->
+            </div>
+  
+            <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
+              <p class="previous-time text-lg">Previous - 2hrs </p> <!-- daily -->
+            </div>
+             
             <!-- Weekly
             10hrs 
             Previous - 8hrs 
@@ -89,19 +107,25 @@
         </div>
     
         <!-- STUDY -->
-        <div class="flex items-end rounded-md inner-card study-card bg-no-repeat bg-right-top  lg:col-span-1 col-span-4">
-          <div class="rounded-md activity-deets min-w-full">
-            <div class="activity-inner flex items-center place-content-between">
-              <div>
-                <h5 class="activity-title text-lg" >Study</h5>
+        <div class="flex items-end rounded-lg inner-card study-card bg-no-repeat bg-right-top  lg:col-span-1 col-span-4">
+          <div class="rounded-lg activity-deets min-w-full grid grid-col-2">
+            <div class="col-span-2">
+              <div class="activity-inner flex items-center place-content-between">
+                <div>
+                  <h5 class="activity-title text-lg" >Study</h5>
+                </div>
+                <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
               </div>
-              <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
             </div>
             
-            <h1 class="activity-time text-6xl">0hrs</h1> <!-- daily -->
-
-            <p class="previous-time text-lg">Previous - 1hr </p> <!-- daily -->
- 
+            <div class="col-span-1  lg:col-span-2">
+              <h1 class="activity-time text-6xl">0hrs</h1> <!-- daily -->
+            </div>
+  
+            <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
+              <p class="previous-time text-lg">Previous - 1hr </p> <!-- daily -->
+            </div>
+             
             <!-- Weekly
             4hrs
             Previous - 7hrs 
@@ -110,22 +134,29 @@
             13hrs 
             Previous - 19hrs  -->
           </div>
+          
         </div>
     
         <!-- EXERCISE -->
-        <div class="flex items-end rounded-md inner-card exercise-card bg-no-repeat bg-right-top  lg:col-span-1 col-span-4">
-          <div class="rounded-md activity-deets min-w-full">
-            <div class="activity-inner flex items-center place-content-between">
-              <div>
-                <h5 class="activity-title text-lg" >Exercise</h5>
+        <div class="flex items-end rounded-lg inner-card exercise-card bg-no-repeat bg-right-top  lg:col-span-1 col-span-4">
+          <div class="rounded-lg activity-deets min-w-full grid grid-col-2">
+            <div class="col-span-2">
+              <div class="activity-inner flex items-center place-content-between">
+                <div>
+                  <h5 class="activity-title text-lg" >Exercise</h5>
+                </div>
+                <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
               </div>
-              <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
             </div>
             
-            <h1 class="activity-time text-6xl">1hr</h1> <!-- daily -->
-
-            <p class="previous-time text-lg">Previous - 1hr </p> <!-- daily -->
- 
+            <div class="col-span-1  lg:col-span-2">
+              <h1 class="activity-time text-6xl">1hr</h1> <!-- daily -->
+            </div>
+  
+            <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
+              <p class="previous-time text-lg">Previous - 1hr </p> <!-- daily -->
+            </div>
+             
             <!-- Weekly
             4hrs
             Previous - 5hrs 
@@ -137,19 +168,25 @@
         </div>
     
         <!-- SOCIAL -->
-        <div class="flex items-end rounded-md inner-card social-card bg-no-repeat bg-right-top  lg:col-span-1 col-span-4">
-          <div class="rounded-md activity-deets min-w-full">
-            <div class="activity-inner flex items-center place-content-between">
-              <div>
-                <h5 class="activity-title text-lg" >Social</h5>
+        <div class="flex items-end rounded-lg inner-card social-card bg-no-repeat bg-right-top  lg:col-span-1 col-span-4">
+          <div class="rounded-lg activity-deets min-w-full grid grid-col-2">
+            <div class="col-span-2">
+              <div class="activity-inner flex items-center place-content-between">
+                <div>
+                  <h5 class="activity-title text-lg" >Social</h5>
+                </div>
+                <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
               </div>
-              <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
             </div>
             
-            <h1 class="activity-time text-6xl">1hr</h1> <!-- daily -->
-
-            <p class="previous-time text-lg">Previous - 3hrs </p> <!-- daily -->
- 
+            <div class="col-span-1  lg:col-span-2">
+              <h1 class="activity-time text-6xl">1hr</h1> <!-- daily -->
+            </div>
+  
+            <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
+              <p class="previous-time text-lg">Previous - 3hrs </p> <!-- daily -->
+            </div>
+             
             <!-- Weekly
             5hrs
             Previous - 10hrs 
@@ -158,23 +195,28 @@
             21hrs 
             Previous - 23hrs  -->
           </div>
-          
         </div>
     
         <!-- SELF CARE -->
-        <div class="flex items-end rounded-md inner-card self-care-card bg-no-repeat bg-right-top  lg:col-span-1 col-span-4">
-          <div class="rounded-md activity-deets min-w-full">
-            <div class="activity-inner flex items-center place-content-between">
-              <div>
-                <h5 class="activity-title text-lg" >Self Care</h5>
+        <div class="flex items-end rounded-lg inner-card self-care-card bg-no-repeat bg-right-top  lg:col-span-1 col-span-4">
+          <div class="rounded-lg activity-deets min-w-full grid grid-col-2">
+            <div class="col-span-2">
+              <div class="activity-inner flex items-center place-content-between">
+                <div>
+                  <h5 class="activity-title text-lg" >Self Care</h5>
+                </div>
+                <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
               </div>
-              <img class="ellipsis-btn" src="images/icon-ellipsis.svg" alt="...">
             </div>
             
-            <h1 class="activity-time text-6xl">0hrs</h1> <!-- daily -->
-
-            <p class="previous-time text-lg">Previous - 1hrs </p> <!-- daily -->
- 
+            <div class="col-span-1  lg:col-span-2">
+              <h1 class="activity-time text-6xl">0hrs</h1> <!-- daily -->
+            </div>
+  
+            <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
+              <p class="previous-time text-lg">Previous - 1hrs </p> <!-- daily -->
+            </div>
+             
             <!-- Weekly
             2hrs
             Previous - 2hrs 
