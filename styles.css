@@ -11,44 +11,9 @@ body {
     background-color: hsl(235, 46%, 20%);
 }
 
-.activity-deets {
-    font-weight: 300;
-    margin-top: 3rem;
-    padding: 1.5rem;
-    background-color: hsl(235, 46%, 20%); 
-    transition: .5s;
-}
-
-.activity-inner {
-    margin-bottom: 20px;
-}
-
-.activity-title {
-    font-weight: 500;
-}
-
-.activity-time {
-    margin-bottom: 10px;
-    font-weight: 300;
-}
-
-.previous-time {
-    font-weight: 400;
-    color: hsl(236, 100%, 87%);
-}
-
-.activity-deets:hover {
-    background-color: hsl(235, 45%, 61%);
-}
-
 .pfp {
     width: 5rem;
     border: white 3px solid;
-}
-
-.deets {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
 }
 
 .user-details h1 {
@@ -59,12 +24,20 @@ body {
     color: hsl(236, 100%, 87%);
 }
 
+.buttons a {
+    color: hsl(236, 100%, 87%);
+    transition: .5s;
+}
+
+.buttons a:hover {
+    color: #fff;
+}
+
 .user-details {
     background-color: hsl(246, 80%, 60%);
 }
 
 /* Activity Cards */
-
 .work-card {
     background-color: hsl(15, 100%, 70%);
     background-image: url('images/icon-work.svg');
@@ -94,6 +67,47 @@ body {
     background-color: hsl(43, 84%, 65%);
     background-image: url('images/icon-self-care.svg');
 }
+
+/* Activity Card Content */
+.activity-deets {
+    font-weight: 300;
+    /* margin-top: 3rem; */
+    padding: 1.5rem;
+    background-color: hsl(235, 46%, 20%); 
+    transition: .5s;
+}
+
+.activity-inner {
+    margin-bottom: 20px;
+}
+
+.activity-title {
+    font-weight: 500;
+}
+
+.activity-time {
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.previous-time {
+    font-weight: 400;
+    color: hsl(236, 100%, 87%);
+}
+
+.activity-deets:hover {
+    background-color: hsl(235, 45%, 61%);
+}
+
+svg {
+    fill: #BBC0FF;
+    transition: .5s
+}
+
+svg:hover {
+    fill: #fff;
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
