@@ -77,10 +77,14 @@ body {
 /* Activity Card Content */
 .activity-deets {
     font-weight: 300;
-    /* margin-top: 3rem; */
+    margin-top: 3rem;
     padding: 1.5rem;
     background-color: hsl(235, 46%, 20%); 
     transition: .5s;
+}
+
+.activity-deets:hover {
+    background-color: hsl(236, 44%, 33%);
 }
 
 .activity-inner {
@@ -99,10 +103,6 @@ body {
 .previous-time {
     font-weight: 400;
     color: hsl(236, 100%, 87%);
-}
-
-.activity-deets:hover {
-    background-color: hsl(235, 45%, 61%);
 }
 
 svg {
