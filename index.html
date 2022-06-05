@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="images/clock.png">
   
-  <title>Frontend Mentor | Time tracking dashboard</title>
+  <title>Time tracking dashboard</title>
 
   <link rel="stylesheet" href="styles.css">
 
@@ -14,10 +14,10 @@
 
 </head>
 <body>
-  <main class="mx-10">
+  <main class="m-10">
 
 
-      <div class="grid grid-cols-4 grid-rows-3 gap-4 ">
+      <div class="grid grid-cols-4 grid-rows-3 gap-6 ">
 
         <!-- USER CARD -->
         <div class="rounded-lg inner-card lg:row-span-2 lg:col-span-1 col-span-4">
@@ -26,27 +26,27 @@
               <img class="pfp rounded-full" src="images/image-jeremy.png" alt="">
             </div>
             <div class="col-span-2 lg:col-span-3">
-              <h6 class="text-lg lg:m-0 mt-2"> Report for</h6>
+              <h6 class="lg:text-lg lg:m-0 mt-2"> Report for</h6>
               <h1 class="text-2xl lg:text-5xl lg:mb-10 mt-0">Jeremy Robson</h1>
             </div>
           </div>
   
           <div class="buttons grid grid-cols-3 p-8 lg:text-left text-center">
             <div class="col-span-1 lg:col-span-3 lg:pb-4">
-              <a id="dailyBtn" href="">Daily</a>
+              <a class="activity-button" id="dailyBtn" href="">Daily</a>
             </div>
             <div class="col-span-1 lg:col-span-3 lg:pb-4">
-              <a id="weeklyBtn" href="">Weekly</a>
+              <a class="activity-button" id="weeklyBtn" href="">Weekly</a>
             </div>
             <div class="col-span-1 lg:col-span-3">
-              <a id="monthlyBtn" href="">Monthly</a>
+              <a class="activity-button" id="monthlyBtn" href="">Monthly</a>
             </div>
           </div>
     
         </div>
     
         <!-- WORK-->
-        <div class="flex items-end rounded-lg inner-card work-card bg-no-repeat bg-right-top lg:col-span-1 col-span-4">
+        <div class="flex items-end rounded-lg inner-card work-card bg-no-repeat lg:col-span-1 col-span-4">
           <div class="rounded-lg activity-deets min-w-full grid grid-col-2">
             <div class="col-span-2">
               <div class="activity-inner flex items-center place-content-between">

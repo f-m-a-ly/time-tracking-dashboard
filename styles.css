@@ -41,31 +41,37 @@ body {
 .work-card {
     background-color: hsl(15, 100%, 70%);
     background-image: url('images/icon-work.svg');
+    background-position:90% -10px;
 }
 
 .play-card {
     background-color: hsl(195, 74%, 62%);
     background-image: url('images/icon-play.svg');
+    background-position:90% -8px;
 }
 
 .study-card {
     background-color: hsl(348, 100%, 68%);
     background-image: url('images/icon-study.svg');
+    background-position:90% -8px;
 }
 
 .exercise-card {
     background-color: hsl(145, 58%, 55%);
     background-image: url('images/icon-exercise.svg');
+    background-position:90% -3px;
 }
 
 .social-card {
     background-color: hsl(264, 64%, 52%);
     background-image: url('images/icon-social.svg');
+    background-position:90% -10px;
 }
 
 .self-care-card {
     background-color: hsl(43, 84%, 65%);
     background-image: url('images/icon-self-care.svg');
+    background-position:90% -10px;
 }
 
 /* Activity Card Content */
@@ -106,6 +112,7 @@ svg {
 
 svg:hover {
     fill: #fff;
+    cursor: pointer;
 }
 
 
