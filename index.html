@@ -42,13 +42,13 @@
   
           <div class="buttons grid grid-cols-3 p-8 lg:text-left text-center">
             <div class="col-span-1 lg:col-span-3 lg:pb-4">
-              <a class="activity-button" id="dailyBtn" href="">Daily</a>
+              <a class="activity-button" id="dailyBtn" onclick="GetDaily()">Daily</a>
             </div>
             <div class="col-span-1 lg:col-span-3 lg:pb-4">
-              <a class="activity-button" id="weeklyBtn" href="">Weekly</a>
+              <a class="activity-button" id="weeklyBtn" onclick="GetWeekly()">Weekly</a>
             </div>
             <div class="col-span-1 lg:col-span-3">
-              <a class="activity-button" id="monthlyBtn" href="">Monthly</a>
+              <a class="activity-button" id="monthlyBtn" onclick="GetMonthly()">Monthly</a>
             </div>
           </div>
     
@@ -67,20 +67,13 @@
             </div>
             
             <div class="col-span-1  lg:col-span-2">
-              <h1 class="activity-time text-6xl">5hrs</h1> <!-- daily -->
+              <h1 class="activity-time text-6xl" id="workTime"></h1> 
             </div>
   
             <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
-              <p class="previous-time text-lg">Previous - 7hrs</p> <!-- daily -->
+              <p class="previous-time text-lg" id="workPrevious"></p> 
             </div>
              
-              <!-- Weekly
-              32hrs
-              Previous - 36hrs
-  
-              Monthly
-              103hrs 
-              Previous - 128hrs  -->
           </div>
         </div>
     
@@ -90,27 +83,19 @@
             <div class="col-span-2">
               <div class="activity-inner flex items-center place-content-between">
                 <div>
-                  <h5 class="activity-title text-lg" >Play</h5>
+                  <h5 class="activity-title text-lg">Play</h5>
                 </div>
                 <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/></svg>
               </div>
             </div>
             
             <div class="col-span-1  lg:col-span-2">
-              <h1 class="activity-time text-6xl">1hr</h1> <!-- daily -->
+              <h1 class="activity-time text-6xl" id="playTime"></h1> 
             </div>
   
             <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
-              <p class="previous-time text-lg">Previous - 2hrs </p> <!-- daily -->
+              <p class="previous-time text-lg" id="playPrevious"></p> 
             </div>
-             
-            <!-- Weekly
-            10hrs 
-            Previous - 8hrs 
-            
-            Monthly
-            23hrs 
-            Previous - 29hrs  -->
           </div>
           
         </div>
@@ -128,20 +113,12 @@
             </div>
             
             <div class="col-span-1  lg:col-span-2">
-              <h1 class="activity-time text-6xl">0hrs</h1> <!-- daily -->
+              <h1 class="activity-time text-6xl" id="studyTime"></h1> 
             </div>
   
             <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
-              <p class="previous-time text-lg">Previous - 1hr </p> <!-- daily -->
+              <p class="previous-time text-lg" id="studyPrevious"></p> 
             </div>
-             
-            <!-- Weekly
-            4hrs
-            Previous - 7hrs 
-
-            Monthly
-            13hrs 
-            Previous - 19hrs  -->
           </div>
           
         </div>
@@ -159,20 +136,13 @@
             </div>
             
             <div class="col-span-1  lg:col-span-2">
-              <h1 class="activity-time text-6xl">1hr</h1> <!-- daily -->
+              <h1 class="activity-time text-6xl" id="exerciseTime"></h1> 
             </div>
   
             <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
-              <p class="previous-time text-lg">Previous - 1hr </p> <!-- daily -->
+              <p class="previous-time text-lg" id="exercisePrevious"></p> 
             </div>
              
-            <!-- Weekly
-            4hrs
-            Previous - 5hrs 
-
-            Monthly
-            11hrs 
-            Previous - 18hrs  -->
           </div>
         </div>
     
@@ -189,20 +159,13 @@
             </div>
             
             <div class="col-span-1  lg:col-span-2">
-              <h1 class="activity-time text-6xl">1hr</h1> <!-- daily -->
+              <h1 class="activity-time text-6xl" id="socialTime"></h1>
             </div>
   
             <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
-              <p class="previous-time text-lg">Previous - 3hrs </p> <!-- daily -->
+              <p class="previous-time text-lg" id="socialPrevious"></p>
             </div>
              
-            <!-- Weekly
-            5hrs
-            Previous - 10hrs 
-
-            Monthly
-            21hrs 
-            Previous - 23hrs  -->
           </div>
         </div>
     
@@ -219,20 +182,20 @@
             </div>
             
             <div class="col-span-1  lg:col-span-2">
-              <h1 class="activity-time text-6xl">0hrs</h1> <!-- daily -->
+              <h1 class="activity-time text-6xl" id="selfCareTime"></h1> 
             </div>
   
             <div class="col-span-1 lg:col-span-2 lg:text-left text-right">
-              <p class="previous-time text-lg">Previous - 1hrs </p> <!-- daily -->
+              <p class="previous-time text-lg" id="selfCarePrevious"></p> 
             </div>
              
             <!-- Weekly
-            2hrs
-            Previous - 2hrs 
+            2hr
+            Previous - 2hr 
 
             Monthly
-            7hrs 
-            Previous - 11hrs  -->
+            7hr 
+            Previous - 11hr  -->
           </div>
         </div>
   
@@ -247,7 +210,7 @@
 
 
 
-
+  <script src="main.js"></script>
 
 </body>
 </html>

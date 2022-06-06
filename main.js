@@ -1,113 +1,115 @@
-let data = [
-    {
-      "title": "Work",
-      "timeframes": {
-        "daily": {
-          "current": 5,
-          "previous": 7
-        },
-        "weekly": {
-          "current": 32,
-          "previous": 36
-        },
-        "monthly": {
-          "current": 103,
-          "previous": 128
-        }
-      }
-    },
-    {
-      "title": "Play",
-      "timeframes": {
-        "daily": {
-          "current": 1,
-          "previous": 2
-        },
-        "weekly": {
-          "current": 10,
-          "previous": 8
-        },
-        "monthly": {
-          "current": 23,
-          "previous": 29
-        }
-      }
-    },
-    {
-      "title": "Study",
-      "timeframes": {
-        "daily": {
-          "current": 0,
-          "previous": 1
-        },
-        "weekly": {
-          "current": 4,
-          "previous": 7
-        },
-        "monthly": {
-          "current": 13,
-          "previous": 19
-        }
-      }
-    },
-    {
-      "title": "Exercise",
-      "timeframes": {
-        "daily": {
-          "current": 1,
-          "previous": 1
-        },
-        "weekly": {
-          "current": 4,
-          "previous": 5
-        },
-        "monthly": {
-          "current": 11,
-          "previous": 18
-        }
-      }
-    },
-    {
-      "title": "Social",
-      "timeframes": {
-        "daily": {
-          "current": 1,
-          "previous": 3
-        },
-        "weekly": {
-          "current": 5,
-          "previous": 10
-        },
-        "monthly": {
-          "current": 21,
-          "previous": 23
-        }
-      }
-    },
-    {
-      "title": "Self Care",
-      "timeframes": {
-        "daily": {
-          "current": 0,
-          "previous": 1
-        },
-        "weekly": {
-          "current": 2,
-          "previous": 2
-        },
-        "monthly": {
-          "current": 7,
-          "previous": 11
-        }
-      }
-    }
-  ]
+const dailyButton = document.getElementById('dailyBtn')
+const weeklyButton = document.getElementById('weeklyBtn')
+const monthlyButton = document.getElementById('monthlyBtn')
 
-  const buttons = document.querySelectorAll("activity-button");
+const workTime = document.getElementById('workTime')
+const workPrevious = document.getElementById('workPrevious')
 
-  buttons.forEach(button => {
-      button.addEventListener('click', () => {
-          activateClickedButon(button)
-          const clickedOption = button.CDATA_SECTION_NODE.clickedOptionrenderCards(clickedOption)
-      })
+const playTime = document.getElementById('playTime')
+const playPrevious = document.getElementById('playPrevious')
+
+const studyTime = document.getElementById('studyTime')
+const studyPrevious = document.getElementById('studyPrevious')
+
+const exerciseTime = document.getElementById('exerciseTime')
+const exercisePrevious = document.getElementById('exercisePrevious')
+
+const socialTime = document.getElementById('socialTime')
+const socialPrevious = document.getElementById('socialPrevious')
+
+const selfCareTime = document.getElementById('selfCareTime')
+const selfCarePrevious = document.getElementById('selfCarePrevious')
+
+const activityTime = [workTime, playTime, studyTime, exerciseTime, socialTime, selfCareTime]
+const activityPrevious = [workPrevious, playPrevious, studyPrevious, exercisePrevious, socialPrevious, selfCarePrevious]
+
+GetDaily()
+
+
+function GetDaily() {
+  dailyButton.classList.add("active");
+  weeklyButton.classList.remove("active");
+  monthlyButton.classList.remove("active");
+
+  fetch('data.json').then(response => {
+    return response.json();
   })
+  .then(jsondata => {
+    // workTime.innerText = jsondata[0].timeframes.daily.current + 'hrs'
+    // workPrevious.innerText = 'Previous - ' + jsondata[0].timeframes.daily.previous + 'hrs'
+
+    // playTime.innerText = jsondata[1].timeframes.daily.current + 'hr'
+    // playPrevious.innerText = 'Previous - ' + jsondata[1].timeframes.daily.previous + 'hrs'
+
+    // studyTime.innerText = jsondata[2].timeframes.daily.current + 'hrs'
+    // studyPrevious.innerText = 'Previous - ' + jsondata[2].timeframes.daily.previous + 'hrs'
+
+    // exerciseTime.innerText = jsondata[3].timeframes.daily.current + 'hr'
+    // exercisePrevious.innerText = 'Previous - ' + jsondata[3].timeframes.daily.previous + 'hr'
+
+    // socialTime.innerText = jsondata[4].timeframes.daily.current + 'hr'
+    // socialPrevious.innerText = 'Previous - ' + jsondata[4].timeframes.daily.previous + 'hrs'
+
+    // selfCareTime.innerText = jsondata[5].timeframes.daily.current + 'hr'
+    // selfCarePrevious.innerText = 'Previous - ' + jsondata[5].timeframes.daily.previous + 'hr'
+ })
+}
+
+function GetWeekly() {
+  dailyButton.classList.remove("active");
+  weeklyButton.classList.add("active");
+  monthlyButton.classList.remove("active");
+
+  fetch('data.json').then(response => {
+    return response.json();
+  })
+  .then(jsondata => {
+    workTime.innerText = jsondata[0].timeframes.weekly.current + 'hrs'
+    workPrevious.innerText = 'Last Week - ' + jsondata[0].timeframes.weekly.previous + 'hrs'
+
+    playTime.innerText = jsondata[1].timeframes.weekly.current + 'hrs'
+    playPrevious.innerText = 'Last Week - ' + jsondata[1].timeframes.weekly.previous + 'hrs'
+
+    studyTime.innerText = jsondata[2].timeframes.weekly.current + 'hrs'
+    studyPrevious.innerText = 'Last Week - ' + jsondata[2].timeframes.weekly.previous + 'hrs'
+
+    exerciseTime.innerText = jsondata[3].timeframes.weekly.current + 'hrs'
+    exercisePrevious.innerText = 'Last Week - ' + jsondata[3].timeframes.weekly.previous + 'hrs'
+
+    socialTime.innerText = jsondata[4].timeframes.weekly.current + 'hrs'
+    socialPrevious.innerText = 'Last Week - ' + jsondata[4].timeframes.weekly.previous + 'hrs'
+
+    selfCareTime.innerText = jsondata[5].timeframes.weekly.current + 'hrs'
+    selfCarePrevious.innerText = 'Last Week - ' + jsondata[5].timeframes.weekly.previous + 'hrs'
+ })
+}
+
+function GetMonthly() {
+  dailyButton.classList.remove("active");
+  weeklyButton.classList.remove("active");
+  monthlyButton.classList.add("active");
+
+  fetch('data.json').then(response => {
+    return response.json();
+  })
+  .then(jsondata => {
+    workTime.innerText = jsondata[0].timeframes.monthly.current + 'hrs'
+    workPrevious.innerText = 'Last Month - ' + jsondata[0].timeframes.monthly.previous + 'hrs'
+
+    playTime.innerText = jsondata[1].timeframes.monthly.current + 'hrs'
+    playPrevious.innerText = 'Last Month - ' + jsondata[1].timeframes.monthly.previous + 'hrs'
+
+    studyTime.innerText = jsondata[2].timeframes.monthly.current + 'hrs'
+    studyPrevious.innerText = 'Last Month - ' + jsondata[2].timeframes.monthly.previous + 'hrs'
+
+    exerciseTime.innerText = jsondata[3].timeframes.monthly.current + 'hrs'
+    exercisePrevious.innerText = 'Last Month - ' + jsondata[3].timeframes.monthly.previous + 'hrs'
+
+    socialTime.innerText = jsondata[4].timeframes.monthly.current + 'hrs'
+    socialPrevious.innerText = 'Last Month - ' + jsondata[4].timeframes.monthly.previous + 'hrs'
+
+    selfCareTime.innerText = jsondata[5].timeframes.monthly.current + 'hrs'
+    selfCarePrevious.innerText = 'Last Month - ' + jsondata[5].timeframes.monthly.previous + 'hrs'
+ })
+}
+

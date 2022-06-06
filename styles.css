@@ -74,6 +74,14 @@ body {
     background-position:90% -10px;
 }
 
+.activity-button {
+    cursor: pointer;
+}
+
+.active {
+    color: #fff!important;
+}
+
 /* Activity Card Content */
 .activity-deets {
     font-weight: 300;
@@ -98,11 +106,13 @@ body {
 .activity-time {
     margin-bottom: 10px;
     font-weight: 300;
+    transition: .5s;
 }
 
 .previous-time {
     font-weight: 400;
     color: hsl(236, 100%, 87%);
+    transition: .5s;
 }
 
 svg {
